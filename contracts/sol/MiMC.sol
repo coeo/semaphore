@@ -19,12 +19,11 @@
  * along with Semaphore.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 library MiMC {
     // Note that this function could also be called "MiMCFeistel", but we name
     // it "MiMCSponge" for consistency.
-    function MiMCSponge(uint256 in_xL, uint256 in_xR) pure public 
-               returns (uint256 xL, uint256 xR);
+    function MiMCSponge(uint256 in_xL, uint256 in_xR) pure public
+               returns (uint256 xL, uint256 xR) {(in_xL, in_xR);}
 }
-

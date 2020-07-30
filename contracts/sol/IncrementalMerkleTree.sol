@@ -19,7 +19,7 @@
  * along with Semaphore.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 import { SnarkConstants } from "./SnarkConstants.sol";
 import { MiMC } from "./MiMC.sol";
@@ -66,7 +66,7 @@ contract IncrementalMerkleTree is SnarkConstants {
             _treeLevels > 0 && _treeLevels <= MAX_DEPTH,
             "IncrementalMerkleTree: _treeLevels must be between 0 and 33"
         );
-        
+
         /*
            To initialise the Merkle tree, we need to calculate the Merkle root
            assuming that each leaf is the zero value.
